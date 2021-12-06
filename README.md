@@ -2,10 +2,8 @@
 
 ## Background
 
-Creating a community outreach website for middle school STEM students.
-
-My company is going to focus on climate change, and since you know how to use Matplotlib, you decide to create some visualizations that showcase the weather parameters you retrieved with changing latitude for the 500-plus cities from all over the world. The students will then be able to use these visualizations to explore how weather parameters change based on latitude.
-
+ If the boss were to ask Bobby how many employees are retiring from the Sales department, we would use both of these functions together with joins to generate an answer.
+ 
 ## Overview of Project
 Deliverables for the analysis of the school district:
 * A high-level snapshot of the district's key metrics, presented in a table format
