@@ -3,7 +3,14 @@
 ## Background
 
  If the boss were to ask Bobby how many employees are retiring from the Sales department, we would use both of these functions together with joins to generate an answer.
- 
+
+ Because of the number of people leaving each department, the boss has requested three lists that are more specific:
+
+Employee Information: A list of employees containing their unique employee number, their last name, first name, gender, and salary
+Management: A list of managers for each department, including the department number, name, and the manager's employee number, last name, first name, and the starting and ending employment dates
+Department Retirees: An updated current_emp list that includes everything it currently has, but also the employee's departments
+
+
 ## Overview of Project
 Deliverables for the analysis of the school district:
 * A high-level snapshot of the district's key metrics, presented in a table format
