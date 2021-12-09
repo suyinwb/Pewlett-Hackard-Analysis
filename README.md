@@ -12,17 +12,14 @@ Department Retirees: An updated current_emp list that includes everything it cur
 
 
 ## Overview of Project
-Deliverables for the analysis of the school district:
-* A high-level snapshot of the district's key metrics, presented in a table format
-* An overview of the key
-
 ### Purpose
+After executing the code and checking the results, a few folks are are appearing twice. Maybe they moved departments?
 
-Results:
-* How is the district summary affected?
-* How is the school summary affected?
+Bobby would like to know the following:
+1. What's going on with the salaries?
+2. Why are there only five active managers for nine departments?
+3. Why are some employees appearing twice?
 
-Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
 
 ## Analysis And Challenges
 
