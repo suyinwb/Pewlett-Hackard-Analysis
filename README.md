@@ -20,6 +20,9 @@ Bobby would like to know the following:
 2. Why are there only five active managers for nine departments?
 3. Why are some employees appearing twice?
 
+The department head for Sales was a little surprised at how many folks will be leaving, so has asked for an additional list, containing only employees in their department. The new list Bobby will need to make will contain everything in the retirement_info table, only tailored for the Sales team.
+
+The same manager asking for a list of retiring employees has asked for a list of employees in both the Sales and Development departments because, together, both managers want to try a new mentoring program for employees getting ready to retire. Instead of having a large chunk of their workforce retiring, they want to introduce a mentoring program: experienced and successful employees stepping back into a part-time role instead of retiring completely. Their new role in the company would be as a mentor to the newly hired folks. Before they can present their idea to the CEO, they'd like to have an idea of how many people between the departments they would need to pitch their idea to.
 
 ## Analysis And Challenges
 
