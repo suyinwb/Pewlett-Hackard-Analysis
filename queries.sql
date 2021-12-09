@@ -130,6 +130,7 @@ FROM employees
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
+DROP TABLE emp_info;
 
 SELECT e.emp_no,
     e.first_name,
@@ -137,7 +138,7 @@ SELECT e.emp_no,
     e.gender,
     s.salary,
     de.to_date
---INTO emp_info
+INTO emp_info
 FROM employees as e
 INNER JOIN salaries as s
 ON (e.emp_no = s.emp_no)
@@ -162,3 +163,25 @@ FROM dept_manager AS dm
         ON (dm.dept_no = d.dept_no)
     INNER JOIN current_emp AS ce
         ON (dm.emp_no = ce.emp_no);
+
+
+
+-- for department head for Sales, list of future retirees in Sales dept
+SELECT ri.emp_no,
+    ri.first_name,
+    ri.last_name,
+    di.dept_name
+FROM retirement_info AS ri
+INNER JOIN dept_info AS di
+ON (ri.emp_no = di.emp_no)
+WHERE di.dept_name = 'Sales';
+
+-- for department head for Sales, list of future retirees in Sales & Development dept
+SELECT ri.emp_no,
+    ri.first_name,
+    ri.last_name,
+    di.dept_name
+FROM retirement_info AS ri
+INNER JOIN dept_info AS di
+ON (ri.emp_no = di.emp_no)
+WHERE di.dept_name IN ('Sales', 'Development');
