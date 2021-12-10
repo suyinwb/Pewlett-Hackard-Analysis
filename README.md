@@ -2,17 +2,12 @@
 
 ## Background
 
- If the boss were to ask Bobby how many employees are retiring from the Sales department, we would use both of these functions together with joins to generate an answer.
-
- Because of the number of people leaving each department, the boss has requested three lists that are more specific:
+Because of the number of people leaving each department, the boss has requested three lists that are more specific:
 
 Employee Information: A list of employees containing their unique employee number, their last name, first name, gender, and salary
 Management: A list of managers for each department, including the department number, name, and the manager's employee number, last name, first name, and the starting and ending employment dates
 Department Retirees: An updated current_emp list that includes everything it currently has, but also the employee's departments
 
-
-## Overview of Project
-### Purpose
 After executing the code and checking the results, a few folks are are appearing twice. Maybe they moved departments?
 
 Bobby would like to know the following:
@@ -24,41 +19,53 @@ The department head for Sales was a little surprised at how many folks will be l
 
 The same manager asking for a list of retiring employees has asked for a list of employees in both the Sales and Development departments because, together, both managers want to try a new mentoring program for employees getting ready to retire. Instead of having a large chunk of their workforce retiring, they want to introduce a mentoring program: experienced and successful employees stepping back into a part-time role instead of retiring completely. Their new role in the company would be as a mentor to the newly hired folks. Before they can present their idea to the CEO, they'd like to have an idea of how many people between the departments they would need to pitch their idea to.
 
+
+## Overview of Project
+### Purpose
+
+Determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Then, I will write a report that summarizes my analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
+
+
 ## Analysis And Challenges
 
 ## Methodology: Analytics Paradigm
 
 #### 1. Decomposing the Ask
-The students_complete.csv file shows evidence of academic dishonesty; specifically, reading and math grades for Thomas High School ninth graders appear to have been altered. Uphold state-testing standards by keeping only Thomas High School scores for 10th to 12th graders.
+
 
 #### 2. Identify the Datasource
-* students_complete.csv
-* schools_complete.csv
+* employees.csv
+* dept_manager.csv
+* dept_emp.csv
+* salaries.csv
+* titles.csv
+* departments.csv
+*
 
 #### 3. Define Strategy & Metrics
-**Resource:** Python 3.6, Anaconda, Jupyter Notebook
+**Resource:** Postgres 14, pgAdmin
 
-1. Change Thomas High School 9th graders reading & math scores to NaN so we do not calculate any scores for Thomas High School 9th graders.
-1. Recalculate the different scores for Thomas High School by only calculating the
+1. create ERD based on the 6 csv data above
+1. create database schema
+1. import csv into the database tables
+1.
 
 #### 4. Data Retrieval Plan
-Read CSV with pandas
-```
-school_data_to_load = "resources/schools_complete.csv"
-student_data_to_load = "resources/students_complete.csv"
-school_data_df = pd.read_csv(school_data_to_load)
-student_data_df = pd.read_csv(student_data_to_load)
-```
+Import csv data into the database tables using pgAdmin import function.
+
 
 #### 5. Assemble & Clean the Data
 * Cleaning student names by removing prefixes & suffixes
 * Cleaning all Thomas High School 9th grades student scores by making them NaN
+```
+any code?
+```
 
 #### 6. Analyse for Trends
 Compare results for all analysis from before student scores cleaning and after student scores cleaning.
 
 #### 7. Acknowledging Limitations
-* Self limitations with pandas, therefore reference Stackover Flow multiple times.
+* pgAdmin is an old application for Postgres front end GUI. So sometimes when closing the application, the database will be corrupted and wiped out by pgAdmin. Do a full backup before closing. 
 
 #### 8. Making the Call:
 The "Proper" Conclusion is indicated below on [Summary](#summary)
