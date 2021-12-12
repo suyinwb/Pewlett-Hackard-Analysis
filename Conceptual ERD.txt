@@ -36,6 +36,7 @@ to_date datetime
 titles
 -
 emp_no PK into FK >- employees.emp_no
-title varchar  
+title varchar  PK
 from_date datetime PK
 to_date datetime
+I
