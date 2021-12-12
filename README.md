@@ -4,10 +4,12 @@
 
 Because of the number of people leaving each department, the boss has requested three lists that are more specific:
 
-Employee Information: A list of employees containing their unique employee number, their last name, first name, gender, and salary
-Management: A list of managers for each department, including the department number, name, and the manager's employee number, last name, first name, and the starting and ending employment dates
-Department Retirees: An updated current_emp list that includes everything it currently has, but also the employee's departments
+* Employee Information: A list of employees containing their unique employee number, their last name, first name, gender, and salary
+* Management: A list of managers for each department, including the department number, name, and the manager's employee number, last name, first name, and the starting and ending employment dates
+* Department Retirees: An updated current_emp list that includes everything it currently has, but also the employee's departments
 
+## Overview of Project
+### Purpose
 After executing the code and checking the results, a few folks are are appearing twice. Maybe they moved departments?
 
 Bobby would like to know the following:
@@ -20,17 +22,12 @@ The department head for Sales was a little surprised at how many folks will be l
 The same manager asking for a list of retiring employees has asked for a list of employees in both the Sales and Development departments because, together, both managers want to try a new mentoring program for employees getting ready to retire. Instead of having a large chunk of their workforce retiring, they want to introduce a mentoring program: experienced and successful employees stepping back into a part-time role instead of retiring completely. Their new role in the company would be as a mentor to the newly hired folks. Before they can present their idea to the CEO, they'd like to have an idea of how many people between the departments they would need to pitch their idea to.
 
 
-## Overview of Project
-### Purpose
-
-Determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Then, I will write a report that summarizes my analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
-
-
 ## Analysis And Challenges
 
 ## Methodology: Analytics Paradigm
 
 #### 1. Decomposing the Ask
+Determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Then, I will write a report that summarizes my analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
 
 
 #### 2. Identify the Datasource
@@ -43,36 +40,49 @@ Determine the number of retiring employees per title, and identify employees who
 *
 
 #### 3. Define Strategy & Metrics
-**Resource:** Postgres 14, pgAdmin
+**Resource:** Postgres 11, pgAdmin, SQL
 
 1. create ERD based on the 6 csv data above
 1. create database schema
 1. import csv into the database tables
-1.
+1. use the tables to find out who are retiring soon, which department have the highest future retirees
+1. from the future retirees information, propose a mentorship
 
 #### 4. Data Retrieval Plan
 Import csv data into the database tables using pgAdmin import function.
 
 
 #### 5. Assemble & Clean the Data
-* Cleaning student names by removing prefixes & suffixes
-* Cleaning all Thomas High School 9th grades student scores by making them NaN
+
+* No data cleaning required
+* Retiring: use SQL Select statements to gather more information on the retirees by their birthdate with the assumption that they will retire once they reach age 65 and more.
 ```
-any code?
+SELECT ...
+FROM ...
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+```
+* Mentorship Eligibility: use SQL Select statements to gather more information on the future retirees by their birthdate with the assumption that they will _**retire in 10 years.**_ These will be candidates for mentorship. 
+```
+SELECT ...
+FROM ...
+WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ```
 
 #### 6. Analyse for Trends
-Compare results for all analysis from before student scores cleaning and after student scores cleaning.
+
+Results from data filter above will give us more indepth information regarding the different departments, roles and future retirees.
 
 #### 7. Acknowledging Limitations
-* pgAdmin is an old application for Postgres front end GUI. So sometimes when closing the application, the database will be corrupted and wiped out by pgAdmin. Do a full backup before closing. 
+* pgAdmin is an old application for Postgres front end GUI. So sometimes when closing the application, the database will be corrupted and wiped out by pgAdmin. Do a full backup before closing.
 
 #### 8. Making the Call:
 The "Proper" Conclusion is indicated below on [Summary](#summary)
 
 ## Analysis
 
-First, start by nullifying the both the scores for Thomas High School 9th graders.
+From our analysis,
+
+
 
 >Old Thomas High School 9th Graders Scores
 
