@@ -127,14 +127,10 @@ Summary: Provide high-level responses to the following questions, then provide t
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-From the above analysis, this "silver tsunami" will have _**90,000 employees retiring soon**_ with
+From the above analysis, this "silver tsunami" will have _**90,000 employees retiring soon**_ from a company that has 300,000 employees. That means around _**30% of the employees in the company are retiring soon.**_ The employees retiring span across all different departments in the company especially _**Development, Production and Sales departments.**_  On top of that, only _**less than 2,000 employees are eligible in the mentorship programme.**_
+This means there are _**90,000 roles of new hires and only 2,000 mentors.**_ It is not possible for 2,000 mentors to train 90,000 new hires and there no guarantee that the new hires will be able to perform to the expertise level required within 1 year.
 
-
-From the analysis above, the most significant differences are due to Thomas High Schools' academic dishonesty are:
-
-1. Thomas High School overall scores fell from _**90.94% to 65.07%**_. This means _**25.9%**_ discrepancy.
-1. Thomas High School math scores fell from _**93.27%% to 66.91%**_. This means _**26.36%**_ discrepancy.
-1. Thomas High School reading scores fell from _**97.3% to 69.66%**_. This means _**27.64%**_ discrepancy.
+Therefore, in order to have less disruption to the business, Pewlett Hackard can always retain some of the retiring employees as mentors to help with skills transfer.
 
 
 ## Appendix
