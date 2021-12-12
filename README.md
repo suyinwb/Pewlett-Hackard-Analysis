@@ -37,7 +37,6 @@ Determine the number of retiring employees per title, and identify employees who
 * salaries.csv
 * titles.csv
 * departments.csv
-*
 
 #### 3. Define Strategy & Metrics
 **Resource:** Postgres 11, pgAdmin, SQL
@@ -91,7 +90,7 @@ From this 90,000 retiring employees, the highest retiring positions are:
 * Engineer: more than 14,000
 * Staff: more than 12,000
 
-While we know there are almost 60,000 Senior Engineers and Senior Staffs retiring soon, we are not able to tell which department they belong to. Therefore using the code below, we are able to determine which departments and roles have the highest retiring employees
+While we know there are _**almost 60,000 Senior Engineers and Senior Staffs retiring soon**_, we are not able to tell which department they belong to. Therefore using the code below, we are able to determine which departments and roles have the highest retiring employees
 
 ```
 SELECT ut.title, d.dept_name, count(ut.emp_no) AS "Total Retiring"
@@ -109,20 +108,10 @@ ORDER BY count(ut.emp_no) DESC;
 
 ![Department & Titles Retiring ](dept_titles_retiring.png)
 
+The table above is a snapshot of retiring employees where we can see the retiring Senior Engineers, Senior Staffs, Engineers and Staffs span across all departments of the organisation and not just Development and Sales. The most impacted departments with more than 10,000 retiring soon are Development, Production and Sales departments.
 
+When we search for employees who maybe retiring in 10 years for the mentorship programme, there are only _** around 1900 employees**_ eligible. ty
 
-Only around 1900 employees in the mentorship eligibility
-
-
->Old Thomas High School 9th Graders Scores
-
-![Old Thomas High School 9th Graders Scores](resources/Old_student_data.png)
-
->New Thomas High School 9th Graders Scores
-
-![New Thomas High School 9th Graders Scores](resources/Clean_student_data.png)
-
-When we check the student data, we will confirm that there are _**416**_ students with no scores and that corresponds to the total students from Thomas High School in 9th grade. See the code below for reference.
 
 
 ## Summary
