@@ -72,7 +72,7 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 Results from data filter above will give us more in-depth information regarding the different departments, roles and future retirees.
 
 #### 7. Acknowledging Limitations
-* pgAdmin is an old application for Postgres front end GUI. So sometimes when closing the application, the database will be corrupted and wiped out by pgAdmin. Do a full backup before closing.
+pgAdmin is an old application for Postgres front end GUI. So sometimes when closing the application, the database will be corrupted and wiped out by pgAdmin. Do a full backup before closing.
 
 #### 8. Making the Call:
 The "Proper" Conclusion is indicated below on [Summary](#summary)
