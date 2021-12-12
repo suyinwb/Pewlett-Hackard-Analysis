@@ -61,7 +61,7 @@ SELECT ...
 FROM ...
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ```
-* Mentorship Eligibility: use SQL Select statements to gather more information on the future retirees by their birthdate with the assumption that they will _**retire in 10 years.**_ These will be candidates for mentorship. 
+* Mentorship Eligibility: use SQL Select statements to gather more information on the future retirees by their birthdate with the assumption that they will _**retire in 10 years.**_ These will be candidates for mentorship.
 ```
 SELECT ...
 FROM ...
@@ -70,7 +70,7 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 
 #### 6. Analyse for Trends
 
-Results from data filter above will give us more indepth information regarding the different departments, roles and future retirees.
+Results from data filter above will give us more in-depth information regarding the different departments, roles and future retirees.
 
 #### 7. Acknowledging Limitations
 * pgAdmin is an old application for Postgres front end GUI. So sometimes when closing the application, the database will be corrupted and wiped out by pgAdmin. Do a full backup before closing.
@@ -80,8 +80,38 @@ The "Proper" Conclusion is indicated below on [Summary](#summary)
 
 ## Analysis
 
-From our analysis,
+From our analysis, there are more than _**90,000 employees retiring soon**_; within the next year as they are already reaching age 65 and above. We determined this by counting the number of employees in unique_titles table.
+```
+SELECT count(emp_no) FROM unique_titles;
+```
 
+From this 90,000 retiring employees, the highest retiring positions are:
+* Senior Engineer: more than 29,000
+* Senior Staff: more than 28,000
+* Engineer: more than 14,000
+* Staff: more than 12,000
+
+While we know there are almost 60,000 Senior Engineers and Senior Staffs retiring soon, we are not able to tell which department they belong to. Therefore using the code below, we are able to determine which departments and roles have the highest retiring employees
+
+```
+SELECT ut.title, d.dept_name, count(ut.emp_no) AS "Total Retiring"
+INTO dept_titles_retiring
+FROM unique_titles AS ut
+JOIN dept_emp AS de
+ON (ut.emp_no = de.emp_no)
+JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+GROUP BY d.dept_name, ut.title
+ORDER BY count(ut.emp_no) DESC;
+```
+
+>Department & Titles Retiring
+
+![Department & Titles Retiring ](dept_titles_retiring.png)
+
+
+
+Only around 1900 employees in the mentorship eligibility
 
 
 >Old Thomas High School 9th Graders Scores
@@ -96,6 +126,12 @@ When we check the student data, we will confirm that there are _**416**_ student
 
 
 ## Summary
+
+Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+
 From the analysis above, the most significant differences are due to Thomas High Schools' academic dishonesty are:
 
 1. Thomas High School overall scores fell from _**90.94% to 65.07%**_. This means _**25.9%**_ discrepancy.
