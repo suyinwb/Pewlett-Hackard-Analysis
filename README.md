@@ -123,10 +123,6 @@ When we search for employees who maybe retiring in 10 years for the mentorship p
 
 ## Summary
 
-Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-
 From the above analysis, this "silver tsunami" will have _**90,000 employees retiring soon**_ from a company that has 300,000 employees. That means around _**30% of the employees in the company are retiring soon.**_ The employees retiring span across all different departments in the company especially _**Development, Production and Sales departments.**_  On top of that, only _**less than 2,000 employees are eligible in the mentorship programme.**_
 This means there are _**90,000 roles of new hires and only 2,000 mentors.**_ It is not possible for 2,000 mentors to train 90,000 new hires and there no guarantee that the new hires will be able to perform to the expertise level required within 1 year.
 
