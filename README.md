@@ -118,7 +118,7 @@ Current total employees in Pewlett Hackard: _**300,000**_. See image below.
 ![Total Employees](total_employees.png)
 
 
-When we search for employees who maybe retiring in 10 years for the mentorship programme, there are only _** around 1900 employees**_ eligible.
+When we search for employees who maybe retiring in 10 years for the mentorship programme, there are only _**around 1900 employees**_ eligible.
 
 
 ## Summary
