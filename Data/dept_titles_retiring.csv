@@ -1,0 +1,39 @@
+title,dept_name,Total Retiring
+Senior Engineer,Development,14731
+Senior Engineer,Production,12767
+Senior Staff,Sales,10930
+Engineer,Development,7186
+Engineer,Production,6111
+Staff,Sales,4768
+Senior Staff,Customer Service,4265
+Senior Staff,Marketing,4200
+Senior Staff,Human Resources,3744
+Senior Staff,Finance,3696
+Senior Staff,Research,3635
+Senior Engineer,Quality Management,3603
+Technique Leader,Development,2252
+Technique Leader,Production,1984
+Staff,Customer Service,1866
+Staff,Marketing,1847
+Engineer,Quality Management,1752
+Staff,Human Resources,1695
+Staff,Finance,1562
+Staff,Research,1521
+Assistant Engineer,Development,889
+Senior Engineer,Research,759
+Assistant Engineer,Production,746
+Senior Engineer,Customer Service,611
+Technique Leader,Quality Management,551
+Senior Staff,Production,437
+Engineer,Research,376
+Senior Staff,Development,376
+Engineer,Customer Service,296
+Assistant Engineer,Quality Management,230
+Staff,Development,194
+Staff,Production,154
+Technique Leader,Research,112
+Technique Leader,Customer Service,77
+Assistant Engineer,Customer Service,34
+Assistant Engineer,Research,32
+Manager,Research,1
+Manager,Sales,1
