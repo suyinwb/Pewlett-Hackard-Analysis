@@ -103,7 +103,7 @@ ON (de.dept_no = d.dept_no)
 GROUP BY d.dept_name, ut.title
 ORDER BY count(ut.emp_no) DESC;
 ```
-The table above is a snapshot of retiring employees where we can see the retiring Senior Engineers, Senior Staffs, Engineers and Staffs span across all departments of the organisation and not just Development and Sales. The most impacted departments with more than 10,000 retiring soon are Development, Production and Sales departments.
+The table below is a snapshot of retiring employees where we can see the retiring Senior Engineers, Senior Staffs, Engineers and Staffs span across all departments of the organisation and not just Development and Sales. The most impacted departments with more than 10,000 retiring soon are Development, Production and Sales departments.
 
 
 >Department & Titles Retiring
