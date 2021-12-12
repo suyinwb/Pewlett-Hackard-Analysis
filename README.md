@@ -1,4 +1,4 @@
-# Pewlett Hackard Analysis
+# Pewlett-Hackard Analysis
 
 ## Background
 
@@ -103,15 +103,22 @@ ON (de.dept_no = d.dept_no)
 GROUP BY d.dept_name, ut.title
 ORDER BY count(ut.emp_no) DESC;
 ```
+The table above is a snapshot of retiring employees where we can see the retiring Senior Engineers, Senior Staffs, Engineers and Staffs span across all departments of the organisation and not just Development and Sales. The most impacted departments with more than 10,000 retiring soon are Development, Production and Sales departments.
+
 
 >Department & Titles Retiring
 
-![Department & Titles Retiring ](dept_titles_retiring.png)
+![Department & Titles Retiring](dept_titles_retiring.png)
 
-The table above is a snapshot of retiring employees where we can see the retiring Senior Engineers, Senior Staffs, Engineers and Staffs span across all departments of the organisation and not just Development and Sales. The most impacted departments with more than 10,000 retiring soon are Development, Production and Sales departments.
 
-When we search for employees who maybe retiring in 10 years for the mentorship programme, there are only _** around 1900 employees**_ eligible. ty
+Current total employees in Pewlett Hackard: _**300,000**_. See image below.
 
+>Total Employees
+
+![Total Employees](total_employees.png)
+
+
+When we search for employees who maybe retiring in 10 years for the mentorship programme, there are only _** around 1900 employees**_ eligible.
 
 
 ## Summary
@@ -119,6 +126,8 @@ When we search for employees who maybe retiring in 10 years for the mentorship p
 Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+From the above analysis, this "silver tsunami" will have _**90,000 employees retiring soon**_ with
 
 
 From the analysis above, the most significant differences are due to Thomas High Schools' academic dishonesty are:
