@@ -46,3 +46,7 @@ JOIN departments AS d
 ON (de.dept_no = d.dept_no)
 GROUP BY d.dept_name, ut.title
 ORDER BY count(ut.emp_no) DESC;
+
+-- Find total employees in the company
+SELECT COUNT(emp_no) AS "Total Employees"
+FROM (SELECT DISTINCT (emp_no) FROM employees) t;
